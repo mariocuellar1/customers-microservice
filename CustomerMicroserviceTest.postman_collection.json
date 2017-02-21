@@ -1,0 +1,70 @@
+{
+	"variables": [],
+	"info": {
+		"name": "CustomerMicroserviceTest",
+		"_postman_id": "71db57c6-d5e3-9954-bb30-8775ac1b911d",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all customers",
+			"request": {
+				"url": "http://localhost:20011/customers",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic dXNlcjE6cGFzc3dvcmQx",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add Customers",
+			"request": {
+				"url": "http://localhost:20011/customers",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic dXNlcjE6cGFzc3dvcmQx",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\": \"Pedro{{$randomInt}}\",\n\t\"lastName\": \"Perez{{$randomInt}}\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get one customer",
+			"request": {
+				"url": "http://localhost:20011/customers/58aad8404944540d6c59f537",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic dXNlcjE6cGFzc3dvcmQx",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

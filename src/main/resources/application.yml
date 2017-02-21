@@ -1,0 +1,29 @@
+spring:
+    application:
+        name: customers-microservice
+server:
+    port: 20011
+security:
+    user:
+        name: user1
+        password: password1
+        role: USER,ADMIN
+
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:17002/eureka/,http://localhost:17003/eureka/
+
+---
+
+spring:
+    profiles: instance1
+server:
+    port: 20012
+
+---
+
+spring:
+    profiles: instance2
+server:
+    port: 20013
