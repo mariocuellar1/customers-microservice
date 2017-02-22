@@ -12,7 +12,7 @@ security:
 eureka:
     client:
         serviceUrl:
-            defaultZone: http://localhost:17002/eureka/,http://localhost:17003/eureka/
+            defaultZone: http://localhost:17001/eureka/,http://localhost:17002/eureka/,http://localhost:17003/eureka/
 
 ---
 
