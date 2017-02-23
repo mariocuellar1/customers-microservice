@@ -1,19 +1,16 @@
 # README
 
-## Spring Boot Simple Customer Microservice
+## Spring Boot Customer Microservice
 
 Microservices is a specialization of an implementation approach for service-oriented architectures (SOA) used to build flexible, independently deployable software systems. Services in a microservice architecture (MSA) are processes that communicate with each other over a network in order to fulfill a goal.
 
-This project is a simple but functional example of Microservice using Spring Boot with simple HTTP Basic Authentication. This project is mainly use to test [Eureka Server](https://github.com/mariocuellar1/eureka-server).
+This project is a but functional example of Microservice using Spring Boot with simple HTTP Basic Authentication. This project is mainly use to test [Zuul Server](https://github.com/mariocuellar1/zuul-server).
 
 ### How to install
 It's an eclipse project, just import it and run. If you want to run more than one instance please use Spring profiles **instance1** and **instance2**.
 
 ### Parameters & Configuration
 * **application.yml**
-  * **security.user.name**: Basic security: username. 
-  * **security.user.password**: Basic security: password. 
-  * **security.user.role**: Basic security: roles. 
   * **eureka.client.serviceUrl.defaultZone** : Eureka server URI(s)
   * **server.port** : Server Port
 
@@ -37,10 +34,11 @@ And you Done !!!!
 - Please feel free to add/modify/correct/update any part of this content as necessary
 
 ### Related Projects
-- [Eureka Server](https://github.com/mariocuellar1/eureka-server)
+- [Zuul Server](https://github.com/mariocuellar1/zuul-server)
 - [Vehicles Microservice](https://github.com/mariocuellar1/vehicles-simple-microservice)
 
 ### Other Projects:
+- [Eureka Server](https://github.com/mariocuellar1/eureka-server)
 - [oAuth Server using oauth and opaque token](https://github.com/mariocuellar1/oauth-server-opaque)
 - [Basic Resource Server using oauth and opaque token](https://github.com/mariocuellar1/basic-resource-server-opaque)
 - [oAuth Server using JWT Token](https://github.com/mariocuellar1/oauth-server-jwt)

@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>io.mcore.myapp</groupId>
-	<artifactId>customers-simple-microservice</artifactId>
+	<artifactId>customers-microservice</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
-	<name>CustomersSimpleMicroservice</name>
+	<name>CustomersMicroservice</name>
 	<description>Demo project for Customer Microservices</description>
 
 	<parent>

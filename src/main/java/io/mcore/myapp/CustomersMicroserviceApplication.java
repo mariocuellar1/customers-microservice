@@ -14,10 +14,10 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 @EnableDiscoveryClient
-public class CustomersSimpleMicroserviceApplication extends WebSecurityConfigurerAdapter {
+public class CustomersMicroserviceApplication extends WebSecurityConfigurerAdapter {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CustomersSimpleMicroserviceApplication.class, args);
+		SpringApplication.run(CustomersMicroserviceApplication.class, args);
 	}
 	
 	@Override
