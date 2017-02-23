@@ -26,6 +26,7 @@ This Microservice tries to register itself in Eureka Server, if Eureka server is
 1. Configure application (application.yml above)
 2. Start Microservice [rigth-clic, run  :) ]
 3. Import postman project *CustomerMicroserviceTest.postman_collection.json* to postman
+   * Get a valid aouth token using "Token - password" and set Authorization header in all other postman tests.
    * Test "Get all customers": List all customers
    * Test "Add Customers": Add new customer
    * Test "Get one customer": Retrieve data for one customer. You have to change URI to set a valid Customer Id.

@@ -2,20 +2,65 @@
 	"variables": [],
 	"info": {
 		"name": "CustomerMicroserviceTest",
-		"_postman_id": "71db57c6-d5e3-9954-bb30-8775ac1b911d",
+		"_postman_id": "7a66cd40-cf3f-f887-a1ba-d9fff75997c7",
 		"description": "",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
 		{
+			"name": "Token - password",
+			"request": {
+				"url": "http://localhost:40051/oauth/token",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic YWNtZTphY21lc2VjcmV0",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "username",
+							"value": "user1",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "password",
+							"value": "password1",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "scope",
+							"value": "read",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
 			"name": "Get all customers",
 			"request": {
-				"url": "http://localhost:20011/customers",
+				"url": "http://localhost:20031/customers",
 				"method": "GET",
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Basic dXNlcjE6cGFzc3dvcmQx",
+						"value": "Bearer e6e3b4cf-2706-4a8e-a449-32f23bf73618",
 						"description": ""
 					}
 				],
@@ -27,12 +72,12 @@
 		{
 			"name": "Add Customers",
 			"request": {
-				"url": "http://localhost:20011/customers",
+				"url": "http://localhost:20031/customers",
 				"method": "POST",
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Basic dXNlcjE6cGFzc3dvcmQx",
+						"value": "Bearer e6e3b4cf-2706-4a8e-a449-32f23bf73618",
 						"description": ""
 					},
 					{
@@ -52,12 +97,12 @@
 		{
 			"name": "Get one customer",
 			"request": {
-				"url": "http://localhost:20011/customers/58aad8404944540d6c59f537",
+				"url": "http://localhost:20031/customers/58aad8404944540d6c59f537",
 				"method": "GET",
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Basic dXNlcjE6cGFzc3dvcmQx",
+						"value": "Bearer e6e3b4cf-2706-4a8e-a449-32f23bf73618",
 						"description": ""
 					}
 				],
