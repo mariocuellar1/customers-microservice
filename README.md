@@ -35,11 +35,11 @@ And you Done !!!!
 
 ### Related Projects
 - [Zuul Server](https://github.com/mariocuellar1/zuul-server)
-- [Vehicles Microservice](https://github.com/mariocuellar1/vehicles-simple-microservice)
+- [Eureka Server](https://github.com/mariocuellar1/eureka-server)
 
 ### Other Projects:
-- [Eureka Server](https://github.com/mariocuellar1/eureka-server)
 - [oAuth Server using oauth and opaque token](https://github.com/mariocuellar1/oauth-server-opaque)
 - [Basic Resource Server using oauth and opaque token](https://github.com/mariocuellar1/basic-resource-server-opaque)
 - [oAuth Server using JWT Token](https://github.com/mariocuellar1/oauth-server-jwt)
 - [Basic Resource Server validating JWT Token](https://github.com/mariocuellar1/basic-resource-server-jwt)
+- [Vehicles Microservice](https://github.com/mariocuellar1/vehicles-simple-microservice)
